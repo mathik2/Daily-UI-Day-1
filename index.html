@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 1.1em;
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            padding: 1rem;
+            background-color: rgb(39, 29, 56);
+            color: white;
+        }
+        #container{
+            display: flex;
+        margin-top: 8%;
+        margin-left: 8%;
+             }
+    
+       fieldset{
+           width:20vw;
+           height:65vh;
+           text-align: center;
+           padding:2rem;
+           background-color: rgb(137, 130, 238);
+           border: 2px solid black;
+       }
+       img,form{
+           width:50vw;
+           height:50vh;
+       }
+       #checkbox{
+           font-size:1rem
+       }
+       input{
+           margin-bottom: 3%;
+       }
+       button{
+           padding: 15px;
+           font-size:1rem;
+           background-color: greenyellow;
+           border-radius: 20px;
+       }
+       legend{
+           font-size:2rem;
+           background-color:rgb(238, 74, 175);
+           padding:0.5rem;
+       }
+       @media only screen and (max-width: 600px) {
+  
+        #container{
+            display: block;
+     
+             }
+             img{
+                width:80vw;
+                height:20vh;
+            }
+          
+       fieldset{
+           
+           height:65vh;
+        
+       }
+    
+      }
+    </style>
+</head>
+<body>
+    <h1>Registration</h1>
+    <div id="container">
+        <figure>
+            <img src="welcome.svg" alt="welcome" >
+            
+          </figure>
+        <form>
+            <fieldset>
+                <legend>Sign Up</legend>
+               
+             <label for="username">Username</label><input type="text" id="username"><br>
+                <label for="Email">Email</label><input type="email" id="email"><br>
+                <label for="PhoneNumber">Phone Number</label><input type="number" id="phoneNumber"><br>
+                <label for="password">Password</label><input type="password" id="password"><br>
+                <label for="password">Re-Password</label><input type="password" id="password"><br>
+          <input type="checkbox" >&nbsp;<label for="checkbox" id="checkbox">I Agree to the Terms and Conditions</label>
+       &nbsp;    <button>Sign Up</button>
+        
+        </fieldset>
+           
+        </form>
+    </div>
+    
+</body>
+</html>
